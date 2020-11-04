@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ImagenController!{% endblock %}
+
+{% block body %}
+{{parent()}}
+<div class="d-flex justify-content-center">
+<img src="{{ asset('uploads/photos/'~imagen.foto) }}">
+</div>
+{% endblock %}
